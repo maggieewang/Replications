@@ -23,7 +23,7 @@ the evolution of the migrant share of income at the top fractiles (1%, 0.1%, 0.0
 * *AdvaniKoenigPessinaSummers_ImportingInequality_data.xlsx:* original dataset as made available by the authors (for reference only)
 * *Advani_et_al_1.csv:* datafile used for figure 1 replications
 * *Advani_et_al_2.csv:* datafile used for figure 2c replication
-* 
+* *Advani_Replication.do:* STATA .do file containing code for replication
 
 ### Replication
 Download the two .csv files, then run the STATA .do file. Please remember to change the file path name in the .do file before running. 
