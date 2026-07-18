@@ -17,7 +17,7 @@ ControlVar2 = ["lnasset", "llnage", "lleverage", "lintangible", "lroa",
 ###########################################################
 
 #load data
-df = pd.read_stata("/Users/maggiewang/Downloads/Year_4/Thesis/replication_package_MS-ENI-21-00153/main_dataset.dta")
+df = pd.read_stata("FILEPATHNAME/main_dataset.dta") #INSERT YOUR OWN FILEPATH TO THE MAIN DATASET
 
 #define variables
 Var1 = ["subsidy_s", "etc_s", "aetc_s", "rd_s", "subsidy_rd", "pat_us", "cite_us", 
