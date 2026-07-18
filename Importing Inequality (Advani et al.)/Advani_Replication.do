@@ -1,8 +1,7 @@
-**PART B: Question 1
 **import data
 import delimited /Users/maggiewang/Downloads/Advani_et_al_1.csv, clear
 
-**replicating figure 1.a)
+**replicating figure 1.a)**
 **creating last data point
 preserve
 drop if pctile > 99.91
@@ -46,7 +45,7 @@ twoway (scatter migrant_prop pctile if reddots == 0, xline(9.5, lcolor(red)) tit
 graph export figure1b.png
 restore
 
-**PART B: Question 2
+**figure 2c replication**
 import delimited /Users/maggiewang/Downloads/Advani_et_al_2.csv, clear
 
 **filter data
@@ -76,7 +75,7 @@ replace topshares = 4 if ts == "Top 0.001"
 
 twoway (connected prop_income tax_year if ts == "Top 1", msymbol(s) mcolor(ebblue) lcolor(ebblue)) (connected prop_income tax_year if ts == "Top 0.1", msymbol(o) mcolor(navy) lcolor(navy)) (connected prop_income tax_year if ts == "Top 0.01", msymbol(t) mcolor(maroon) lcolor(maroon)) (connected prop_income tax_year if ts == "Top 0.001", msymbol(d) mcolor(red) lcolor(red) ylabel(0(0.1)0.4,format(%3.1f) glpattern(solid) noticks) xlabel(1997 2000 2003 2006 2009 2012 2015 2018, nogrid noticks) scale(0.7) title("Share of income in top fractiles that goes to migrants") ytitle("Share of income") xtitle("Years") legend(label(1 "Top 1") label(2 "Top 0.1") label(3 "Top 0.01") label(4 "Top 0.001")))
 
-graph export question2b.png
+graph export figure2c.png
 
 
 
