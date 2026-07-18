@@ -1,5 +1,5 @@
 **import data
-import delimited /Users/maggiewang/Downloads/Advani_et_al_1.csv, clear
+import delimited /PATHNAME/Advani_et_al_1.csv, clear //INSERT YOUR OWN FILE PATH
 
 **replicating figure 1.a)**
 **creating last data point
@@ -46,7 +46,7 @@ graph export figure1b.png
 restore
 
 **figure 2c replication**
-import delimited /Users/maggiewang/Downloads/Advani_et_al_2.csv, clear
+import delimited /PATHNAME/Advani_et_al_2.csv, clear //INSERT YOUR OWN FILE PATH
 
 **filter data
 **part a)
